@@ -1,0 +1,34 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center mb-3">  GİRİŞ YAP</h1>
+        <% include ./partials/messages %>
+        <form action="/users/login" method="POST">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Mail Adresinizi Giriniz"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Şifre</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              placeholder="Şifrenizi Giriniz"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Giriş</button>
+        </form>
+        <p class="lead mt-4">
+          Hesabınız yok mu? Kaydolun :) <a href="/users/register">Kaydol</a>
+        </p>
+      </div>
+    </div>
+  </div>
